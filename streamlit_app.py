@@ -1,12 +1,3 @@
-import os  
-  
-# Command to execute 
-# Using Windows OS command 
-cmd = 'pip install cohere'
-  
-# Using os.system() method 
-os.system(cmd) 
-
 import cohere
 import streamlit as st
 
