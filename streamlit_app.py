@@ -1,4 +1,4 @@
-from cohere import cohere
+import cohere
 import streamlit as st
 
 co = cohere.Client('18V1Oo06GAf0xMaXbBjkHlhdHktqbjc5tusZHZMV') # This is your trial API key
