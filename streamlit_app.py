@@ -1,6 +1,11 @@
-import pip
+import sys
+import subprocess
+# implement pip as a subprocess:
+subprocess.check_call([sys.executable, '-m', 'pip', 'install', 'cohere'])
 
-pip.main(['install', 'cohere'])
+'''import pip
+
+pip.main(['install', 'cohere'])'''
 
 import cohere
 import streamlit as st
