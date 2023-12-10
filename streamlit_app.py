@@ -7,15 +7,6 @@ cmd = 'pip install cohere'
 # Using os.system() method 
 os.system(cmd) 
 
-'''import sys
-import subprocess
-# implement pip as a subprocess:
-subprocess.check_call([sys.executable, '-m', 'pip', 'install', 'cohere'])
-
-import pip
-
-pip.main(['install', 'cohere'])'''
-
 import cohere
 import streamlit as st
 
