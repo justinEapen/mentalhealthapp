@@ -13,6 +13,7 @@
       "settings": {},
       "extensions": [
         "ms-python.python",
+        "requirements.txt",
         "ms-python.vscode-pylance"
       ]
     }
