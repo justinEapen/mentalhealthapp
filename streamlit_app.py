@@ -34,7 +34,7 @@ st.markdown("""
 
 st.sidebar.title("What to do :)")
 app=st.sidebar.selectbox("Choose the app mode",
-        ["Home", "Depression", "Anxiety","Quiz"])
+        ["Home", "Depression", "Anxiety","Quiz","Chatbot"])
 if app=="Home":
     page()
 elif app=="Depression":
