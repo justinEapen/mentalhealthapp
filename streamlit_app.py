@@ -2,7 +2,6 @@ import pip
 
 pip.main(['install', 'cohere'])
 
-import time
 import cohere
 import streamlit as st
 
@@ -17,6 +16,7 @@ Ask these questions one after another. DO NOT ASK EVERYTHING AT ONCE. Get the in
 If you don't know the answer to any query, just say you don't know. DO NOT try to make up an answer.
 If the question is not related to the context, politely respond that you are tuned to only answer questions that are related to the context."""
 
+
 docs = [
     {
         "name" : "Mental Health"
@@ -28,8 +28,7 @@ def cohereChat(prompt):
         model='command',
         message=prompt,
         preamble_override = preamble_prompt,
-        #documents=docs,
-        connectors=[{"id": "web-search"}] 
+        documents=docs,
     )
 
     return llm_response
@@ -55,21 +54,9 @@ def main():
         # Add user message to chat history
         st.session_state.messages.append({"role": "user", "content": prompt})
 
-        # Display typing animation
-        typing_placeholder = st.empty()
-        typing_placeholder.text("Kirti is typing...")
-
         llm_response = cohereChat(prompt)
 
         response = f"{llm_response.text}"
-
-        # Simulate typing delay
-        time.sleep(2)  # Adjust the duration based on your preference
-
-        # Remove typing animation
-        typing_placeholder.empty()
-
-        
         # Display assistant response in chat message container
         with st.chat_message("assistant"):
             st.markdown(response)
