@@ -1,6 +1,6 @@
 import pip
 
-pip.main(['install', 'cohere'])
+-m pip.main(['install', 'cohere'])
 
 import cohere
 import streamlit as st
