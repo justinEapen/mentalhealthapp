@@ -24,7 +24,7 @@ docs = [
 
 def cohereChat(prompt):
     llm_response = co.chat(
-        model='command',
+        model='command-r-plus',
         message=prompt,
         preamble = preamble_prompt,
         documents=docs,
