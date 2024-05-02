@@ -62,7 +62,6 @@ def cohereReply(prompt):
             documents=docs,
             model='command',
             preamble=preamble_prompt,
-            stream=True,
             conversation_id=conversation_id,
             chat_history=st.session_state.messages,
         )
@@ -72,7 +71,6 @@ def cohereReply(prompt):
             message=prompt,
             documents=docs,
             model='command',
-            stream=True,
             conversation_id=conversation_id,
             preamble=preamble_prompt,
 
