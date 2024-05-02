@@ -63,7 +63,7 @@ def cohereReply(prompt):
             model='command',
             preamble=preamble_prompt,
             conversation_id=conversation_id,
-            chat_history=st.session_state.messages,
+            #chat_history=st.session_state.messages,
         )
     else:
 
