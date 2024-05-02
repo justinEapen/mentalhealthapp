@@ -44,9 +44,11 @@ Express your desire to collaborate and support them in building emotional resili
 
 
 docs = [
-    {
-        "name" : "Mental Health"
-    }
+        {
+            "title": "Kirti - Your Personal Mental Health Assistant",
+            "snippet": "Kirti is a compassionate and understanding virtual companion designed to provide a safe haven for individuals seeking support and guidance on their mental health journey. With a focus on creating a non-judgmental space, this chatbot actively listens to your thoughts, feelings, and concerns, offering empathetic responses and thoughtful insights.",
+            "image": "https://wallpapers.com/images/hd/rapunzel-pictures-qxxztbzgehwqcbob.jpg"
+        },
 ]
 
 
